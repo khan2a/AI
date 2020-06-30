@@ -4,7 +4,7 @@ envids = [spec.id for spec in envs.registry.all()]
 for envid in sorted(envids):
     print(envid)
 
-env = gym.make('CartPole-v0')
+env = gym.make('BattleZone-v0')
 env.reset()
 for _ in range(100):
     env.render(mode='rgb_array')
